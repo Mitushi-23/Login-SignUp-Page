@@ -142,3 +142,28 @@ form span {
 .home-page-title {
     color: #222
 }
+
+
+#log_btn span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#log_btn span:after {
+    content: '\00ab';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+#log_btn:hover span {
+  padding-left: 25px;
+}
+
+#log_btn:hover span:after {
+  opacity: 1;
+  left: 0;
+}

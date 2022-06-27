@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {  useHistory } from "react-router-dom";
+import {  Link, useHistory } from "react-router-dom";
 import '../../App.css'
 import axios from './Axios'
 
@@ -47,6 +47,9 @@ export default function SignInPage() {
                 </p>
                 <p>
                     <button id="sub_btn" type="submit">Login</button>
+                </p>
+                <p>
+                    New User? <Link to="/register">Register</Link>
                 </p>
             </form>
             

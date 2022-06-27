@@ -5,7 +5,7 @@ import { selectUser } from "../../redux/userSlice";
 const HomePage = () => {
     // const dispatch = useDispatch();
     const user = useSelector(selectUser);
-    // console.log(user);
+    console.log(user);
 
    
 

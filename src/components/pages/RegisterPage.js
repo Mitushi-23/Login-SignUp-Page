@@ -35,7 +35,7 @@ export default function SignUpPage() {
         <div className="text-center m-5-auto">
             <h2>Join us</h2>
             <h5>Create your personal account</h5>
-            <form onSubmit={handleSubmit}>
+            <form >
                 <p>
                     <label>First Name:</label><br />
                     <input type="text" name="first_name" onChange={onChange} required />
@@ -53,7 +53,10 @@ export default function SignUpPage() {
                     <input type="password" name="password" onChange={onChange} required />
                 </p>
                 <p>
-                    <button id="sub_btn" type="submit">Register</button>
+                    <button id="sub_btn" type="submit" onClick={handleSubmit}>Register</button>
+                </p>
+                <p>
+                    Already have an account? <Link to="/login">Login</Link>
                 </p>
             </form>
             <footer>
